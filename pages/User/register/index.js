@@ -8,7 +8,12 @@ function register() {
         <title>User Registration</title>
         <meta name="description" content="Login Page" />
       </Head>
-      <p>Registration page</p>
+      <form>
+        <input placeholder="name" type="text"></input>
+        <input placeholder="email" type="email"></input>
+        <input placeholder="password" type="password"></input>
+        <button type="submit">Login</button>
+      </form>
     </>
   );
 }

@@ -1,14 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
+import LoginForm from '../../../components/login/loginForm';
 function login({ name }) {
   return (
     <>
-      <Head>
-        <title>User Login</title>
-        <meta name="description" content="Login Page" />
-      </Head>
-      <p>Login page {name}</p>
+      <LoginForm />
     </>
   );
 }
