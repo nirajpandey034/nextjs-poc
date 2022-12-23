@@ -3,18 +3,20 @@ import { TextField, Typography, Button, Container, Stack } from '@mui/material';
 
 function LoginForm() {
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        console.log('submitted');
-      }}
-    >
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <TextField label="username"></TextField>
-        <TextField label="password"></TextField>
-        <Button type="submit">Login</Button>
-      </div>
-    </form>
+    <Container maxWidth="sm">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log('submitted');
+        }}
+      >
+        <Stack direction="column" spacing={2} mt={5}>
+          <TextField label="username"></TextField>
+          <TextField label="password"></TextField>
+          <Button type="submit">Login</Button>
+        </Stack>
+      </form>
+    </Container>
   );
 }
 
