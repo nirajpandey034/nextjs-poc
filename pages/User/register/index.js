@@ -13,4 +13,9 @@ function register() {
   );
 }
 
+export function getServerSideProps() {
+  return {
+    props: { name: 'Niraj Pandey' },
+  };
+}
 export default register;

@@ -1,16 +1,22 @@
-import React from 'react'
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 
-function login() {
+function login({ name }) {
   return (
     <>
-    <Head>
+      <Head>
         <title>User Login</title>
         <meta name="description" content="Login Page" />
       </Head>
-      <p>Login page</p>
+      <p>Login page {name}</p>
     </>
-  )
+  );
 }
 
-export default login
+export function getServerSideProps() {
+  return {
+    props: { name: 'Niraj Pandey' },
+  };
+}
+
+export default login;
