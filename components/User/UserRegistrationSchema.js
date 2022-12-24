@@ -17,7 +17,7 @@ export const schema = yup.object().shape({
     .string()
     .email('Please enter proper email')
     .required('Mandatory Field'),
-  phone: yup.number().required('Mandatory Field'),
+  phone: yup.number().typeError('Must be a number').min(10).max(10).required('Mandatory Field'),
   password: yup
     .string()
     .nullable()
@@ -33,6 +33,7 @@ export const schema = yup.object().shape({
     .oneOf([yup.ref('password'), null], 'Passwords must match'),
   dob: yup
     .date()
+    .typeError('Must be a date')
     .max(new Date(Date.now() - 567648000000), 'You must be at least 18 years')
     .required('Mandatory Field'),
   isGay: yup.bool(),
