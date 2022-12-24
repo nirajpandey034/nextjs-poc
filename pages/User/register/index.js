@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import RegistrationForm from '../../../components/User/register/RegistrationForm';
 
 function register() {
   return (
@@ -8,12 +9,7 @@ function register() {
         <title>User Registration</title>
         <meta name="description" content="Login Page" />
       </Head>
-      <form>
-        <input placeholder="name" type="text"></input>
-        <input placeholder="email" type="email"></input>
-        <input placeholder="password" type="password"></input>
-        <button type="submit">Login</button>
-      </form>
+      <RegistrationForm />
     </>
   );
 }
