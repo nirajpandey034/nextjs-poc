@@ -17,7 +17,7 @@ export const schema = yup.object().shape({
     .string()
     .email('Please enter proper email')
     .required('Mandatory Field'),
-  phone: yup.number().typeError('Must be a number').min(10).max(10).required('Mandatory Field'),
+  phone: yup.number().typeError('Must be a number').required('Mandatory Field'),
   password: yup
     .string()
     .nullable()
