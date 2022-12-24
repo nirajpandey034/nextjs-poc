@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-import LoginForm from '../../../components/User/login/loginForm';
+import LoginForm from '../../../components/User/login/LoginForm';
 function login({ name }) {
   return (
     <>
