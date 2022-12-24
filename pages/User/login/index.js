@@ -9,7 +9,7 @@ function login({ name }) {
         <title>User Login</title>
         <meta name="description" content="Login Page" />
       </Head>
-      <LoginForm />
+        <LoginForm />
     </>
   );
 }

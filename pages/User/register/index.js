@@ -9,7 +9,16 @@ function register() {
         <title>User Registration</title>
         <meta name="description" content="Login Page" />
       </Head>
-      <RegistrationForm />
+      <div
+        style={{
+          height: '80vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <RegistrationForm />
+      </div>
     </>
   );
 }
